@@ -56,7 +56,7 @@ class Physics():
             line.elasticity = 0.95
             line.friction = 1
             line.collision_type = COLLISION_LINE
-        self.space.add(static_lines)
+        self.space.add(*static_lines)
         self.static_lines = static_lines
 
     def setup_collision_handler(self):
